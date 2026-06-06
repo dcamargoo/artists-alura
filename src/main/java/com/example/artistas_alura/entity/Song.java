@@ -12,6 +12,7 @@ public class Song {
 
     private String title;
 
+    // duração da música em segundos
     private int duration;
 
     @ManyToOne

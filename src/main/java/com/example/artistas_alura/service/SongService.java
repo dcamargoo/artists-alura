@@ -29,6 +29,8 @@ public class SongService {
         song.setTitle(songDTO.title());
         song.setDuration(songDTO.duration());
         song.setArtist(artist);
+
+        songRepository.save(song);
     }
 
     public List<SongDTO> getSongs(){
@@ -42,4 +44,17 @@ public class SongService {
                 .map(s -> new SongDTO(s.getTitle(), s.getDuration()))
                 .orElseThrow(() -> new RuntimeException("Música não encontrada"));
     }
+
+    public List<SongDTO> getSongsByArtistId(Long artistId) {
+        return songRepository.findByArtistId(artistId).stream()
+                .map(s -> new SongDTO(s.getTitle(), s.getDuration()))
+                .toList();
+    }
+
+    public List<SongDTO> getTop5LongestsSongs(){
+        return songRepository.findTop5ByOrderByDurationDesc().stream()
+                .map(s -> new SongDTO(s.getTitle(), s.getDuration()))
+                .toList();
+    }
+
 }
