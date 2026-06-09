@@ -41,6 +41,8 @@ Este projeto foi desenvolvido como desafio no curso de Java da Alura, com o obje
    mvn spring-boot:run
 ```
 
+---
+
 ### Imagens da Execução do Programa
 
 #### 1. Registrando um novo artista
