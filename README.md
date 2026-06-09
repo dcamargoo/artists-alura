@@ -5,10 +5,10 @@ Este projeto foi desenvolvido como desafio no curso de Java da Alura, com o obje
 ---
 
 ### Detalhes do Projeto
-- Mapeamento objeto-relacional de tabelas SQL para código Java
-- Persistência e gerenciamento de dados com banco de dados local PostgreSQL
-- Relacionamento dinâmico entre diferentes tabelas (`Artistas` e `Músicas`)
-- Criação de uma interface interativa via terminal com fluxo contínuo de opções
+- Mapeamento objeto-relacional de tabelas SQL para código Java e vice-versa.
+- Persistência e gerenciamento de dados com banco de dados local PostgreSQL.
+- Relacionamento dinâmico entre diferentes tabelas (`Artistas` e `Músicas`).
+- Criação de uma interface interativa via terminal com fluxo contínuo de opções.
 
 ---
 
